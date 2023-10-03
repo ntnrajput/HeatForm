@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <title>Auto IC Maker</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid mt-3">
+      
+      <form action="" method="get">
+        <div class="form-row">
+          <div class="form-group col-md-1">
+            <label for="sn">S.No.:</label>
+            <input type="number" class="form-control" id="sn" name="sn" required="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" id="date" name="date" required="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="heatnum">Heat Number:</label>
+            <input type="num" class="form-control" id="heatnum" name="heatnum" required="">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="shift">Shift:</label>
+            <select class="form-control" name="shift" id="shift">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </div>
+          <div class="form-group col-md-1">
+            <label for="grade">Grade:</label>
+            <select class="form-control" name="grade" id="grade">
+              <option value="R260">R260</option>
+              <option value="880">880</option>
+              <option value="R350HT">R350HT</option>
+            </select>
+          </div>
+          <div class="form-group col-md-1">
+            <label for="section">Section:</label>
+            <select class="form-control" name="section" id="section">
+              <option value="60E1">60E1</option>
+              <option value="R52">R-52</option>
+            </select>
+          </div>
+          <div class="form-group col-md-1">
+            <label for="mill">Mill:</label>
+            <select class="form-control" name="mill" id="mill">
+              <option value="URM">URM</option>
+              <option value="RSM">RSM</option>
+            </select>
+          </div>
+          <div class="form-group col-md-1">
+            <label for="sms">SMS</label>
+            <select class="form-control" name="sms" id="sms">
+              <option value="sms2">II</option>
+              <option value="sms3">III</option>
+            </select>
+          </div>  
+        </div>
+
+        <br>
+
+        <div class="form-row" style="background-color: antiquewhite;" >                
+          <div class="form-group col-md-1">
+            <label for="L_C">%C</label>
+            <input type="number" class="form-control tolerance-input" id="L_C" name="L_C" required="" step="0.01" data-min="0.68" data-max="0.80">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Mn">%Mn</label>
+            <input type="number" class="form-control tolerance-input" id="L_Mn" name="L_Mn" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_P">%P</label>
+            <input type="number" class="form-control tolerance-input" id="L_P" name="L_P" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_S">%S</label>
+            <input type="number" class="form-control tolerance-input" id="L_S" name="L_S" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Si">%Si</label>
+            <input type="number" class="form-control tolerance-inputtolerance-input" id="L_Si" name="L_Si" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Al">%Al</label>
+            <input type="number" class="form-control tolerance-input" id="L_Al" name="L_Al" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Cr">%Cr</label>
+            <input type="number" class="form-control tolerance-input" id="L_Cr" name="L_Cr" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_V">%V</label>
+            <input type="number" class="form-control tolerance-input" id="L_V" name="L_V" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_N">%N2</label>
+            <input type="number" class="form-control tolerance-input" id="L_N" name="L_N" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_N">%N2</label>
+            <input type="number" class="form-control tolerance-input" id="L_N" name="L_N" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="H">H(ppm)</label>
+            <input type="number" class="form-control tolerance-input" id="H" name="H" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_O">%O</label>
+            <input type="number" class="form-control tolerance-input" id="L_O" name="L_O" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Cu">%Cu</label>
+            <input type="number" class="form-control tolerance-input" id="L_Cu" name="L_Cu" required="" step="0.01">
+          </div>        
+          <div class="form-group col-md-1">
+            <label for="L_Ni">%Ni</label>
+            <input type="number" class="form-control tolerance-input" id="L_Ni" name="L_Ni" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Mo">%Mo</label>
+            <input type="number" class="form-control tolerance-input" id="L_Mo" name="L_Mo" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Nb">%Nb</label>
+            <input type="number" class="form-control tolerance-input" id="L_Nb" name="L_Nb" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Ti">%Ti</label>
+            <input type="number" class="form-control tolerance-input" id="L_Ti" name="L_Ti" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Sb">%Sb</label>
+            <input type="number" class="form-control tolerance-input" id="L_Sb" name="L_Sb" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Sn">%Sn</label>
+            <input type="number" class="form-control tolerance-input" id="L_Sn" name="L_Sn" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_Cu10Sn">%Cu+10Sn</label>
+            <input type="number" class="form-control tolerance-input" id="L_Cu10Sn" name="L_Cu10Sn" required="" step="0.01">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="L_others">Others</label>
+            <input type="number" class="form-control tolerance-input" id="L_others" name="L_others" required="" step="0.01">
+          </div>
+          
+
+
+
+        </div>
+        <br>
+
+        
+
+        <br>
+        <button type="submit" class="btn btn-primary">Make IC</button>
+      </form>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts (optional, if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="myscript.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

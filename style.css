@@ -2,18 +2,19 @@
  .form-label, .form-control, select {
     font-size: 14px;
     padding: 1px;
+    text-align: center;
 }
 
 /* Optionally, adjust label height */
 .form-group label {
-    height: 25px;
-    margin: 0px;
-   
+  height: 25px;
+  margin: 0px;
+  text-align: center;
 }
 
 /* Optionally, adjust input height */
 .form-group .form-control, .form-group select {
-    height: 25px;
+  height: 25px;
 }
 
 .form-group{
@@ -30,3 +31,13 @@
     background-color: red;
     color: white;
 }
+
+hr{
+  margin:1px;
+  
+}
+
+.form-group{
+  text-align: center;
+}
+
